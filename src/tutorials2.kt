@@ -7,4 +7,7 @@ fun main(){
     var z = 12
     z = z + 10
     println("The result is ${z + y}")
+
+
+    println("The result is ${x / y}")
 }
