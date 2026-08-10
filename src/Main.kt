@@ -57,22 +57,61 @@ fun main() {
 
 
 
-    //IF STATEMENTS
+
+//
+//    //IF STATEMENTS , WHEN
+//
+//    println("Enter a number:")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()
+//
+//    if(inputAsInteger != null){
+//        val output = when{
+//            inputAsInteger % 2 == 0 -> "THe number s even!"
+//            inputAsInteger < 10 -> "The number is less than 10"
+//            //in 10..20 ->  "The number is between 10 and 20"
+//            else -> "The number is odd and atleast 11"
+//        }
+////        val output = if(inputAsInteger  % 2 == 0){
+////            "The number is even"
+////        }else{
+////            "The number is odd"
+////        }
+////        val isEven = inputAsInteger % 2 == 0
+////        if(isEven){
+////            println("The number is even !")
+////        }else{
+////            println("The number is odd!")
+////        }
+////        println("Is the number even? $isEven")
+//        println(output)
+//    }else{
+//        println("Dude, enter a valid number:")
+//    }
+//
+
+    //TRY , CATCH , EXCEPTIONS
 
     println("Enter a number:")
     val input = readln()
-    val inputAsInteger = input.toIntOrNull()
+//    throw Exception("Dude what u passed here") // for throwing exceptions
+    val inputAsInteger = try{
+        input.toInt()
+    }catch (e: NumberFormatException){
+//    }catch (e: Exception){ // include all kinds of exceptions
+        0
+    } finally { // this piece definitely executed this finally bloc
 
-    if(inputAsInteger != null){
-        val isEven = inputAsInteger % 2 == 0
-        if(isEven){
-            println("The number is even !")
-        }else{
-            println("The number is odd!")
-        }
-        println("Is the number even? $isEven")
-    }else{
-        println("Dude, enter a valid number:")
     }
 
+
+
+
+
+
+
+
+
 }
+
+
