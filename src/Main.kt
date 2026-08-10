@@ -9,9 +9,9 @@ fun main() {
     //    val x: Float = 5f // float
     //    val x: Double = 5.2222  // double numbers
     //    val x: Boolean = true // Boolean
-//    var x: String = "Siddhes" //String
-   // can take var when value changing later on in code
-//    x = "Bye Bye"
+    //    var x: String = "Siddhes" //String
+       // can take var when value changing later on in code
+    //    x = "Bye Bye"
 
 
 
